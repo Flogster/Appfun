@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 # vim:fenc=utf-8
-
+# 
 
 from lxml import etree
 from json import dumps
@@ -17,7 +17,6 @@ ICON_UP = "i120"
 ICON_DOWN = "i124"
 ICON_EQ = "i401"  # the  '=' icon
 
-
 class Price(ndb.Model):
 	value = ndb.FloatProperty()
 	client_addr = ndb.StringProperty()
@@ -30,7 +29,6 @@ class Price(ndb.Model):
 		else:
 			oldValue = res[0]
 		return oldValue
-
 
 class MainPage(webapp2.RequestHandler):
 	def get(self):
