@@ -1,14 +1,12 @@
-#!/usr/bin/ python
+#!/usr/bin/python
 
 from lxml import etree
 from json import dumps
-from lametric import LaMetricClient
 
 from google.appengine.api import urlfetch
 from google.appengine.ext import ndb
 
 import webapp2
-import json
 
 OLD_PRICE_ID = 'oldPriceKey'
 
