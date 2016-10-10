@@ -44,14 +44,14 @@ class MainPage(webapp2.RequestHandler):
 	data = {
 		"frames": [
 			{
-				"index": 0,
 				"text": "%.2f$" % price,
-				"icon": icon
+				"icon": icon,
+				"index": 0
 				},
 			{
-				"index": 1,
 				"text": "%.2f$" % price,
-				"icon": "i1819"
+				"icon": "i1819",
+				"index": 1
 			}
 			]
 		}
