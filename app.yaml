@@ -5,7 +5,7 @@ threadsafe: true
 
 handlers:
 - url: /.*
-  script: oilwti.py
+  script: WTIexp.app
 
 libraries:
 - name: lxml
