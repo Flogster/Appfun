@@ -1,4 +1,6 @@
-#!/usr/bin/python
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+# vim:fenc=utf-8
 
 from lxml import etree
 from json import dumps
