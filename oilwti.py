@@ -1,15 +1,14 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-# vim:fenc=utf-8
-# 
+#!/usr/bin/ python
 
 from lxml import etree
 from json import dumps
+from lametric import LaMetricClient
 
 from google.appengine.api import urlfetch
 from google.appengine.ext import ndb
 
 import webapp2
+import json
 
 OLD_PRICE_ID = 'oldPriceKey'
 
@@ -67,7 +66,7 @@ class MainPage(webapp2.RequestHandler):
 		tree = etree.HTML(result.content)
 		prices = tree.xpath('//td[@class="data-table__row__cell"][@data-type="value"]/text()')
 		return float(prices[1])
-
+	
 app = webapp2.WSGIApplication([
 	('/', MainPage),
 ], debug=True)
